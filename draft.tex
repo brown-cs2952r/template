@@ -1,4 +1,4 @@
-\documentclass[sigplan, screen, 10pt]{acmart}
+\documentclass[sigplan, review, screen, 10pt]{acmart}
 \renewcommand\footnotetextcopyrightpermission[1]{}
 \settopmatter{printfolios=false,printccs=false,printacmref=false}
 
@@ -39,7 +39,7 @@
 \usepackage{booktabs}
 \usepackage{subcaption}
 
-\title{pSys: A Distributed Engine for Patent Records}
+\title{sysX: A new technique or system}
 
 \author{Josiah Stinkney Carberry}
 \affiliation{Brown University}
@@ -48,7 +48,7 @@
 \begin{document}
 
 \begin{abstract}
-This paper presents the design, implementation, and evaluation of \sys, a distributed and scalable search engine developed for CS2952r at Brown University.
+This paper presents the design, implementation, and evaluation of sysX, a new something something
 \end{abstract}
 
 \maketitle
@@ -102,9 +102,6 @@ This section ...
 
 \textbf{An Example} Walk the reader through an example
 
-\textbf{Patent Features}
-Use the example to discuss some unique features of this particular domain.
-
 \begin{figure}[t]
 \centering
 \begin{minted}[fontsize=\footnotesize]{javascript}
@@ -126,7 +123,8 @@ server.listen(3000, '127.0.0.1', () => {
 \label{fig:example}
 \end{figure}
 
-\subsection{\sys Design Overview}
+\subsection{Design Overview}
+
 \label{bg:overview}
 
 \section{Technical Section 1}
@@ -144,15 +142,14 @@ server.listen(3000, '127.0.0.1', () => {
 \setlength\tabcolsep{3pt}
 \caption{
     \textbf{Component decomposition}.
-    The table below summarizes the components comprising our search engine \sys,
-    and their characteristics.
+    The table below summarizes some information
 }
 \begin{tabular*}{\columnwidth}{l @{\extracolsep{\fill}} llll}
 \toprule
-Component                &  Lead   & Description                                 & LoC                    & Something   \\
+Component          &  C     & Description & 1             & Something   \\
 \midrule
-component 1              & Joe     & Mini                                        &  13 (12.5\%)           & else        \\
-component another        & Joseph  & Mini                                        &  17 (16.3\%)           & else        \\
+component 1        & 2      & Mini        &  13 (12.5\%)  & else        \\
+component another  & Joseph & Mini        &  17 (16.3\%)  & else        \\
 \bottomrule
 \vspace{-18pt}
 \end{tabular*}
@@ -165,20 +162,6 @@ component another        & Joseph  & Mini                                       
 \section{Discussion}
 \label{discussion}
 
-\textbf{Reflections:}
-% ## Summarize the process of writing the paper and preparing the poster, including any surprises you encountered.
-Summary of the process
-% ## Roughly, how many hours did the paper take you to complete?
-The paper alone took $t$ hours to complete; the poster took about $p$ hours.
-
-% ## How many LoC did the distributed version of the project end up taking?
-In total, the distributed version of the project ended up taking $DLoC$.
-(Discuss decomposition of the code).
-% ## How does this number compare with your non-distributed version?
-The original prediction from M0 ranged between $X$--$Y$. 
-% ## How different are these numbers for different members in the team and why?
-On of the reasons for these predictions was (reflect and discuss).
-
 
 \section{Related Work}
 \label{related}
@@ -186,12 +169,12 @@ On of the reasons for these predictions was (reflect and discuss).
 \section{Conclusion}
 \label{conclusion}
 
-\sys's implementation, as well as all the example code and benchmarks presented in this paper, are all open source and available for download:
+The system's implementation, as well as all the example code and benchmarks presented in this paper, are all open source and available for download:
 \href{https://github.com/something/else}{github.com/something/else}.
 
 % \subsection*{Acknowledgements}
 \begin{acks}
-To complete our project, we used ChatGPT with the following prompts, Co-Pilot as follows, answers to stackoverflow questions 1232 and 1231, and received help from X and Y.
+
 \end{acks}
 
 %% Bibliography
@@ -201,18 +184,10 @@ To complete our project, we used ChatGPT with the following prompts, Co-Pilot as
 
 \appendix
 
-\section{Reflections}
-\label{reflections}
-
-% Summarize the process of writing the paper, including any surprises
-
-% Roughly, how many hours did **the paper** take you to complete?
-
-Hours for paper: <time>
-
 \section{Using our System}
 \label{using-apx}
 
 The section below summarizes how to deploy and use our system..
 
 \end{document}
+
