@@ -1,26 +1,25 @@
 % https://github.com/brown-cs2952r/template
 \documentclass[sigplan, review, screen, 10pt]{acmart}
+
+\acmSubmissionID{PAPER ID}
 \renewcommand\footnotetextcopyrightpermission[1]{}
 \settopmatter{printfolios=false,printccs=false,printacmref=false}
 
 \acmYear{2024}\copyrightyear{2024}
 \acmConference[Brown 2952r'24]{Brown's Systems Transforming Systems}{Fall, 2024}{Providence, RI}
 
-\usepackage{enumitem}
-\usepackage{booktabs}
-\usepackage{soul}
-\usepackage{xspace}
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{upquote}
-\usepackage{listings}
-\usepackage{amsmath}
-\usepackage{wrapfig}
-\usepackage{syntax}
-\usepackage{caption}
-\usepackage{picins}
-\usepackage{minted}
-\usepackage{subcaption}
+% Note: The 'acmart' class automatically loads several essential packages,
+% including booktabs, amsmath, graphicx, and hyperref.
+
+\usepackage{enumitem}     % For list customization
+\usepackage{soul}         % Used for highlighting (\hl) in the \TODO command
+\usepackage{xspace}       % For smart spacing in custom commands like \sys
+\usepackage{xcolor}       % Required by soul and minted for colors
+\usepackage{upquote}      % For correct single quotes in minted environments
+\usepackage{minted}       % For syntax highlighting of code snippets
+\usepackage{caption}      % For customizing captions with \captionsetup
+
+\captionsetup{font=footnotesize,labelfont={bf, footnotesize}, belowskip=2pt}
 
 \newcommand{\eg}{{\em e.g.}, }
 \newcommand{\ie}{{\em i.e.}, }
@@ -29,6 +28,13 @@
 \newcommand{\cf}[1]{(\emph{Cf}.\S\ref{#1})}
 \newcommand{\sx}[1]{(\S\ref{#1})}
 \newcommand{\sys}{{\scshape pSys}\xspace}
+\newcommand{\TODO}[1]{\hl{\textbf{TODO:} #1}\xspace}
+\newcommand{\rf}[1]{\ref{#1}}
+\newcommand{\se}[1]{\S\ref{#1}}
+\newcommand{\fg}[1]{Fig.~\ref{#1}}
+\newcommand{\heading}[1]{\vspace{2pt}\noindent\textbf{\emph{#1}}:\enspace}
+\newcommand{\ttt}[1]{\mintinline[fontsize=\normalsize, breaklines, breakafter=-]{js}{#1}}
+
 
 \renewcommand{\shortauthors}{J. S. Carberry}
 
@@ -64,18 +70,15 @@ Sections \ref{one}--\ref{three} highlight key contributions:
 	\item
 	\S\ref{one}
 		outlines a section and contribution.
-
 	\item
 	\S\ref{two} outlines another section and contribution.
 
 	\item
 	\S\ref{three} is similar about \sys's third contribution and a corresponding section.
-
 \end{itemize}
 
 \noindent
-After sysX's evaluation~\sx{eval} and  comparison with related work~\sx{related}, the paper concludes~\sx{discussion}.  
-
+After sysX's evaluation~\sx{eval} and  comparison with related work~\sx{related}, the paper concludes~\sx{discussion}.
 \begin{figure}[t]
 \centering
 % https://docs.google.com/drawings/d/1yYUWsfreEDoHUXxcIAF62bnzgahHs76YQwM9vbmVkgA/edit?usp=sharing
@@ -97,10 +100,8 @@ This section ...
 \label{bg:patents}
 
 \textbf{An Example} Walk the reader through an example.
-
 \textbf{Patent Features}
 Use the example to discuss some unique features of this particular domain.
-
 \begin{minted}[fontsize=\footnotesize]{javascript}
 // this is an example of a code snippet
 import { createServer } from 'node:http';
@@ -161,7 +162,6 @@ component another        & Joseph  & Mini                                       
 
 sysX's implementation, as well as all the example code and benchmarks presented in this paper, are all open source and available for download:
 \href{https://github.com/something/else}{github.com/something/else}.
-
 % \subsection*{Acknowledgements}
 \begin{acks}
 \end{acks}
